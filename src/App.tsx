@@ -7,13 +7,11 @@ import ButtonAppBar from "./components/Toolbar";
 const App = () => {
   return (
     <BrowserRouter>
-      <div>
-        <ButtonAppBar />
-        <Routes>
-          <Route path="/users" element={<UserPage />} />
-          <Route path="/todos" element={<TodosPage />} />
-        </Routes>
-      </div>
+      <ButtonAppBar />
+      <Routes>
+        <Route path="/users" element={<UserPage />} />
+        <Route path="/todos" element={<TodosPage />} />
+      </Routes>
     </BrowserRouter>
   );
 };
